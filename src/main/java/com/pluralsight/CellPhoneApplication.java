@@ -13,16 +13,23 @@ public class CellPhoneApplication {
         scan.nextLine();
 
         System.out.print("What model is the phone? ");
-        String model = scan.nextLine();
+        cellphone.setModel(scan.nextLine());
 
         System.out.print("What carrier is the phone? ");
-        String carrier = scan.nextLine();
+        cellphone.setCarrier(scan.nextLine());
 
         System.out.print("Whats your phone number? ");
-        String phoneNumber = scan.nextLine();
+        cellphone.setPhoneNumber(scan.nextLine());
 
         System.out.print("Whats your name? ");
-        String owner = scan.nextLine();
+        cellphone.setOwner(scan.nextLine());
+
+        System.out.println("Serial number: " + cellphone.getSerialNumber());
+        System.out.println("Phone model: " + cellphone.getModel());
+        System.out.println("Phone carrier: " + cellphone.getCarrier());
+        System.out.println("Phone number: " + cellphone.getPhoneNumber());
+        System.out.println("Owner of phone: " + cellphone.getOwner());
+
 
 
 
